@@ -19,7 +19,7 @@
 </script>
 
 <AppShell>
-	<svelte:fragment slot="pageHeader"><AppHeader /></svelte:fragment>
+	<svelte:fragment slot="pageHeader"><AppHeader/></svelte:fragment>
 	<svelte:fragment slot="sidebarLeft"><AppLeftPanel /></svelte:fragment>
 	<!-- (sidebarRight) -->
 	<!-- (pageHeader) -->

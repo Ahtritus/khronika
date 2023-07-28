@@ -8,7 +8,9 @@
 	];
 </script>
 
-<div class="bg-surface-800 text-white h-full w-24 sticky top-0 left-0 overflow-y-auto">
+<div
+	class="bg-surface-300 dark:bg-primary-800 text-primary-800 dark:text-primary-100 h-full w-24 sticky top-0 left-0 overflow-y-auto"
+>
 	<div class="flex items-center justify-center h-16">
 		<span class="text-2xl font-bold">
 			<a href="/">
