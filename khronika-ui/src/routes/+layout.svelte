@@ -10,7 +10,24 @@
 	import '@skeletonlabs/skeleton/themes/theme-hamlindigo.css';
 	import '@skeletonlabs/skeleton/themes/theme-crimson.css';
 	import '@skeletonlabs/skeleton/themes/theme-gold-nouveau.css';
+
+    import { AppShell } from '@skeletonlabs/skeleton';
+	import AppHeader from "../components/AppHeader.svelte"
+	import AppLeftPanel from "../components/AppLeftPanel.svelte"
+
+
 </script>
 
+<AppShell>
+	<svelte:fragment slot="pageHeader"><AppHeader /></svelte:fragment>
+	<svelte:fragment slot="sidebarLeft"><AppLeftPanel /></svelte:fragment>
+	<!-- (sidebarRight) -->
+	<!-- (pageHeader) -->
+	<!-- Router Slot -->
+	<slot />
+	<!-- ---- / ---- -->
+	<svelte:fragment slot="pageFooter">Page Footer</svelte:fragment>
+	<!-- (footer) -->
+</AppShell>
 
-<slot />
+
